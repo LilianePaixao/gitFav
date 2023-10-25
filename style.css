@@ -1,0 +1,175 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: #000000;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+#GitFav{
+  display: flex;
+  gap: 1rem;
+}
+
+header{
+  display: flex;
+  width: 112rem;
+  justify-content: space-between;
+}
+.search{
+  display:flex;
+  gap:1rem;
+  justify-content: center;
+}
+
+input{
+  background-color: #06181C;
+  color:#7C7C8A;
+  width: 46.2rem;
+  height: 4.8rem;
+  border-radius: .5rem;
+  border:none;
+  padding:1.6rem ;
+}
+
+.sr-only{
+  width:1px;
+  height: 1px;
+  position:absolute;
+  overflow: hidden;
+  margin:-1px;
+  padding:0px;
+  border:0;
+  appearance: none;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+header button{
+  background-color: #065E7C;
+  border-radius: 0.5rem;
+  padding: 1.2rem 3.2rem 1.2rem 3.2rem;
+
+  color:white;
+ 
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+  display: flex;
+  gap:0.5rem;
+  border:none;
+}
+.star{
+  background-image: url(./assets/star.svg);
+  color:white;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+ button:hover {
+  border:none;
+  font-family: 'Roboto', sans-serif;
+  color:#065E7C;
+  background-color: #fff;
+}
+button:hover .star{
+  background-image: url(./assets/starhover.svg);
+  color:#065E7C;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+
+
+
+
+header p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 700;
+}
+
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8.7rem;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+}
+
+table th{
+  background-color: hsla(194,72%, 13%);
+  text-align: left;
+  padding: 1.6rem 2.4rem;
+  
+}
+table th:first-child{
+  border-radius: .4rem 0 0 0;
+ 
+  padding-left: 4rem;
+}
+
+table th:last-child{
+  border-radius:0 .4rem 0 0;
+}
+
+table td{
+  padding: 2.4rem 2.4rem 2.4rem 4.0rem;
+}
+
+table td.users img{
+  width: 5.6rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+td.users{
+  display:flex;
+  align-items: center;
+  gap:1rem;
+}
+
+td.users a p {
+  text-decoration: none;
+  color:white;
+}
+
+td.users a span {
+  text-decoration: none;
+  color:white;
+  font-weight: 400;
+}
+td button{
+  background-color: transparent;
+  border:none;
+  color:#F75A68;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  cursor:pointer;
+}
+
+table tr:nth-child(even){
+  background-color: hsl(192, 65%, 7%);
+  border-top:1px solid #4A808C;
+  border-bottom: 1px solid #4A808C;
+}
